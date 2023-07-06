@@ -24,9 +24,9 @@ The form is currently available in English. However, if you need translations fo
 
 ## Preview
 
-![Form Preview]([path/to/preview/image.png](https://i.imgur.com/Rgmj3hO.png))
+![Form Preview]((https://i.imgur.com/Rgmj3hO.png))
 
-You can also try out the interactive form on CodePen.io: [CodePen Link]((https://codepen.io/yusuf57rl/pen/RwqLRwJ))
+You can also try out the interactive form on CodePen.io: [CodePen Link](https://codepen.io/yusuf57rl/pen/RwqLRwJ)
 
 
 ## Issues and Contributions
