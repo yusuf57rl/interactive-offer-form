@@ -22,6 +22,13 @@ This repository contains an interactive form developed for log-sysdev.de. The fo
 
 The form is currently available in English. However, if you need translations for other languages, please contact me, and I'll be happy to provide the translations or guide you on how to add them.
 
+## Preview
+
+![Form Preview]([path/to/preview/image.png](https://i.imgur.com/Rgmj3hO.png))
+
+You can also try out the interactive form on CodePen.io: [CodePen Link]((https://codepen.io/yusuf57rl/pen/RwqLRwJ))
+
+
 ## Issues and Contributions
 
 If you encounter any issues or have suggestions for improvements, please create an issue on GitHub. Contributions in the form of bug fixes, enhancements, or translations are highly appreciated.
