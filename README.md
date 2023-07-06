@@ -24,7 +24,7 @@ The form is currently available in English. However, if you need translations fo
 
 ## Preview
 
-![Form Preview]((https://cdn.discordapp.com/attachments/1125832474937802813/1126653182920118302/ygMVvedH2k.png))
+![Form Preview](https://cdn.discordapp.com/attachments/1125832474937802813/1126653182920118302/ygMVvedH2k.png)
 
 You can also try out the interactive form on CodePen.io: [CodePen Link](https://codepen.io/yusuf57rl/pen/RwqLRwJ)
 
