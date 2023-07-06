@@ -1,0 +1,141 @@
+<!--
+    HTML/CSS/JS Notice:
+    This HTML, CSS, and JS code snippet is created by Yusuf Senel for personal use on the website log-sysdev.de.
+    All rights reserved. Unauthorized use, reproduction, or distribution is strictly prohibited.
+    This code is provided as-is and without warranty of any kind.
+-->
+
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<main>
+    <div class="form-container" style="margin-top: 20px;">
+        <form action="{{ path('offer_post') }}" method="post" id="offerForm">
+            <div id="flash-messages">
+                <!-- {% for message1 in app.flashes('success') %}
+                    <div class="alert alert-success" role="alert">
+                        <span class="alert-message">{{ message1 }}</span>
+                    </div>
+                {% endfor %} -->
+
+                <!--{% for message2 in app.flashes('danger') %}
+                    <div class="alert alert-danger" role="alert">
+                        <span class="alert-message">Alert Message</span>
+                    </div>
+              {% endfor %}
+
+               Note: The above code is written using Twig syntax and is suitable for those who use Twig templating engine.
+               -->
+                <div id="alert-container"></div>
+            </div>
+
+            <div class="progress" style="margin-bottom: 20px;">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" id="progress-bar"
+                     role="progressbar" style="width: 33.33%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">
+                </div>
+            </div>
+
+            <input type="hidden" id="service" name="service" value=""/>
+            <input type="hidden" id="webdesignOption" name="webdesignOption" value=""/>
+            <input type="hidden" id="logoOption" name="logoOption" value=""/>
+            <input type="hidden" id="otherOption" name="otherOption" value=""/>
+            <input type="hidden" id="clientName" name="clientName" value=""/>
+            <input type="hidden" id="clientEmail" name="clientEmail" value=""/>
+            <input type="hidden" id="projectDescription" name="projectDescription" value=""/>
+            <input type="hidden" id="projectDate" name="projectDate" value=""/>
+            <input type="hidden" id="budgetAmount" name="budgetAmount" value=""/>
+
+            <div class="icon-container service-details active" id="step-1">
+                <a href="https://www.flaticon.com/free-icons/development" title="development icons"
+                   class="flaticon-credit">Development/Logo design icons created by Freepik - Flaticon</a>
+
+                <div class="icon-card" data-service="webdesign">
+                    <img src="https://api.log-sysdev.de/uploads/coding.png" alt="Webdesign Icon">
+                    <span>Webdesign</span>
+                </div>
+                <div class="icon-card" data-service="logo">
+                    <img src="https://api.log-sysdev.de/uploads/logo-design.png" alt="Logo Design Icon">
+                    <span>Logo Design</span>
+                </div>
+                <div class="icon-card" data-service="other">
+                    <img src="https://api.log-sysdev.de/uploads/ellipsis.png" alt="Other Icon">
+                    <span>Other Services</span>
+                </div>
+            </div>
+
+            <!-- step 2 -->
+            <div class="icon-container service-details" id="step-2-webdesign">
+                <div class="icon-card" data-step="3" data-target="#step-3">
+                    <span>Create a new website</span>
+                </div>
+                <div class="icon-card" data-step="3" data-target="#step-3">
+                    <span>Revise an existing website</span>
+                </div>
+                <div class="icon-card" data-step="3" data-target="#step-3">
+                    <span>Website maintenance</span>
+                </div>
+            </div>
+
+            <div class="icon-container service-details" id="step-2-logo">
+                <!-- Insert options for Logo Design here -->
+                <div class="icon-card" data-step="3" data-target="#step-3">
+                    <span>Create a new logo</span>
+                </div>
+            </div>
+
+            <div class="icon-container service-details" id="step-2-other">
+                <!-- Insert options for Other Services here -->
+                <div class="icon-card" data-step="3" data-target="#step-3">
+                    <span>Create a custom app</span>
+                </div>
+            </div>
+
+            <!-- step 3 -->
+            <div class="form-group service-details" id="step-3">
+                <label for="name" class="next-label">Your Name:</label>
+                <input type="text" id="name" class="form-control next-input">
+
+                <label for="email" class="mt-3 next-label" style="display: none;">
+                    Your Email Address:</label>
+                <input type="email" id="email" class="form-control next-input" style="display: none;">
+
+                <label for="description" class="mt-3 next-label" style="display: none;">
+                    Project Description:</label>
+                <textarea id="description" class="form-control next-input" rows="3" style="display: none;"></textarea>
+
+                <label for="project-date" class="mt-3 next-label" style="display: none;">
+                    Deadline:</label>
+                <input type="date" id="project-date" class="form-control next-input" style="display: none;">
+
+                <label for="budget" class="mt-3 next-label" style="display: none;">
+                    Budget:</label>
+                <div class="input-group next-input" style="display: none;">
+                    <input type="range" id="budget" class="form-range" min="0" max="10000" step="10">
+                    <div class="input-group-append">
+                <span class="input-group-text bg-transparent border-0" id="budget-value"
+                      style="font-weight: bold;">$0</span>
+                    </div>
+                    (If you don't have a budget)
+                </div>
+
+                <label for="recaptcha" class="mt-3 next-label" style="display: none;">Recaptcha:</label>
+                <div class="input-group next-input" style="display: none;">
+                    <div class="g-recaptcha" data-sitekey=""></div>
+                </div>
+            </div>
+
+            <div id="buttons">
+                <button type="button" id="prev-btn" class="it-cta-form-prv"
+                        style="max-width: 150px; display: none;">Back
+                </button>
+                <button type="button" class="it-cta-form-submit border-0" id="submit-button"
+                        style="max-width: 150px; display: none;">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+</main>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="assets/form.js"></script>
