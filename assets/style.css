@@ -1,0 +1,216 @@
+/*
+CSS Notice:
+This CSS code snippet is created by Yusuf Senel for personal use on the website log-sysdev.de.
+All rights reserved. Unauthorized use, reproduction, or distribution is strictly prohibited.
+This code is provided as-is and without warranty of any kind.
+*/
+
+.form-control {
+    font-size: 18px;
+    padding: 12px;
+}
+
+.next-label {
+    font-size: 18px;
+}
+
+.next-label + .next-input {
+    margin-top: 10px;
+}
+
+.form-container {
+    max-width: 800px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Added this line to wrap the icons on smaller screens */
+}
+
+.flaticon-credit {
+    font-size: 8px;
+    opacity: 0.7;
+    position: absolute;
+    margin-top: 190px;
+    display: block;
+}
+
+.icon-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    width: 30%;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1);
+}
+
+.icon-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.icon-card span {
+    font-size: 18px;
+}
+
+.icon-card img {
+    width: 100px;
+    height: 100px;
+}
+
+.icon-container.service-details.active .icon-card span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.service-details {
+    display: none;
+}
+
+.service-details.active {
+    display: flex;
+}
+
+.progress {
+    margin-bottom: 20px;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.btn {
+    width: 150px;
+    padding: 10px;
+}
+
+#buttons {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@keyframes progress-bar-pulse {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.progress-bar-pulse {
+    animation: progress-bar-pulse 2s infinite;
+}
+
+.next-input {
+    margin-bottom: 10px;
+}
+
+.input-group .form-range {
+    width: 70%;
+}
+
+.input-group-append {
+    margin-left: 10px;
+}
+
+@media (max-width: 600px) {
+    .form-container {
+        max-width: 100%;
+    }
+    .icon-card {
+        width: 100%;
+    }
+    .form-control {
+        font-size: 16px;
+        padding: 8px;
+    }
+}
+.menu-container {
+    position: relative;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 99;
+}
+
+.menu.active {
+    display: block;
+}
+.alert {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}
+/* Button "Back" */
+.it-cta-form-prv {
+    background-color: #fff;
+    color: #333;
+    border: 2px solid #333;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.it-cta-form-prv:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Button "Submit" */
+.it-cta-form-submit {
+    background-color: #ff5f5f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.it-cta-form-submit:hover {
+    background-color: #e53e3e;
+}
