@@ -24,18 +24,7 @@ The form is currently available in English. However, if you need translations fo
 
 ## Preview
 
-First Step:
 ![Form Preview](https://cdn.discordapp.com/attachments/1125832474937802813/1126842589845409872/rD87zKSYFf.png)
-
-Secound Step: 
-![Form Preview - Step 2](https://cdn.discordapp.com/attachments/1125832474937802813/1126842623869591552/LXsnmdnASy.png)
-
-Third Step:
-![Form Preview - Step 3/4](https://media.discordapp.net/attachments/1125832474937802813/1126842801099907102/XdHebnhJ6f.png?width=810&height=337)
-
-Last Step:
-![Form Preview - Last Step](https://cdn.discordapp.com/attachments/1125832474937802813/1126843817736290304/1EC28gwG3U.png)
-
 
 
 You can also try out the interactive form on CodePen.io: [CodePen Link](https://codepen.io/yusuf57rl/pen/RwqLRwJ)
